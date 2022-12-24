@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- link to external css styles -->
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <section class="homepage grid">
+    <!-- <img src="images/bg-main-desktop.png" alt="random image"> -->
+
+    <div class="card-section grid">
+      <div class="card-front">
+        <svg width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
+        <div class="card-number">0000 0000 0000 0000</div>
+
+        <div class="card-details flex">
+            <h2 id="card-holder-name">Jane Appleseed</h2>
+            <div>
+                <span class="card-month">00</span>/
+                <span class="card-year">00</span>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="card-back">
+      <h2 class="ccv-cb-text">000</h2>
+    </div>
+  </div>
+
+  <form class="design">
+    <div class="input">
+        <label for="card-detail">CARDHOLDER NAME</label>
+        <input type="text" id="card-detail" class="input-style" maxlength="18" placeholder="e.g. Jane Appleseed">
+        <span class="error1"></span>
+    </div>
+
+    <div class="input">
+        <label for="number">CARD NUMBER</label>
+        <input class="input-style" type="text" maxlength="19" name="number" id="number" placeholder="e.g. 1234 5678 9123 0000">
+        <span class="error2"></span>
+    </div>
+
+    <div class="date-input">
+        <div class="input">
+            <label  for="month">EXP. DATE(MM/YY)</label>
+            <input class="input-style date" type="text" name="month" id="month" maxlength="2" placeholder="MM" >
+            <!-- <span class="error3"></span> -->
+            <input class="input-style date" type="text" name="year" id="year" placeholder="YY" maxlength="2">
+            <span class="error4"></span>
+        </div>
+    </div>
+
+    <div class="ccv-section">
+        <div class="input">
+            <label for="ccv">CCV</label>
+            <input class="input-style ccv" type="text" maxlength="3" name="ccv" id="ccv" placeholder="e.g. 123">
+            <span class="error5"></span>
+        </div>
+    </div>
+
+    <div class="input-submit">
+        <input type="submit" class="primary-button" value="confirm">
+    </div>
+
+  </form>
+  
+  </section>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Dytoma">Dytoma</a>.
+  </div>
+
+  <!-- link to jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <!-- JavaScript external file -->
+  <script src="index.js"></script>
+</body>
+</html>
